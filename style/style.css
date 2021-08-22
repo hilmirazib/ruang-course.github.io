@@ -1,0 +1,62 @@
+/* $colors: (
+  'blue': $blue,
+  'indigo': $indigo,
+  'purple': $purple,
+  'pink': $pink,
+  'red': $red,
+  'orange': $orange,
+  'yellow': $yellow,
+  'green': $green,
+  'teal': $teal,
+  'cyan': $cyan,
+  'white': $white,
+  'gray': $gray-600,
+  'gray-dark': $gray-800
+); */
+@media (min-width: 768px) {
+  .news-input {
+    width: 50%;
+  }
+}
+#home {
+  border-bottom-width: 5px;
+  border-style: solid;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-color: #0dcaf0;
+  font-weight: bolder;
+}
+#brand {
+  border-bottom-width: 5px;
+  border-style: solid;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-color: #0dcaf0;
+  border-top-width: 5px;
+  border-top-width: 5px;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-color: #0dcaf0;
+  font-family: Lora;
+  font-weight: bold;
+}
+.lora {
+  font-family: Lora;
+  font-weight: bold;
+}
+.montserrat {
+  font-family: Montserrat;
+  font-weight: normal;
+}
+.montserrat-light {
+  font-family: Montserrat;
+  font-weight: lighter;
+}
