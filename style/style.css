@@ -1,3 +1,8 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
 /* $colors: (
   'blue': $blue,
   'indigo': $indigo,
@@ -59,4 +64,7 @@
 .montserrat-light {
   font-family: Montserrat;
   font-weight: lighter;
+}
+#container-class {
+  margin-top: 50px;
 }

@@ -4,14 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css" />
     <title>Ruang Course - Frontend Web Developer</title>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark py-3 fixed-top">
       <div class="container">
         <a href="" class="navbar-brand" id="brand">RUANG <span class="text-warning">COURSE</span></a>
 
@@ -27,7 +33,7 @@
               <a href="#home" class="nav-link active" id="home">Home</a>
             </li>
             <li class="nav-item me-4">
-              <a href="#class" class="nav-link">Kelas Bootcamp</a>
+              <a href="#kelas" class="nav-link">Kelas Bootcamp</a>
             </li>
             <li class="nav-item me-4">
               <a href="#home" class="nav-link">Become a Mentor</a>
@@ -46,9 +52,12 @@
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
-            <h2 class="lora">Ingin Menjadi <span class="text-warning">Web Developer</span>? Bergabunglah Bersama Kami di <span class="text-warning">Ruang Course</span>.</h2>
+            <h2 class="lora">
+              Ingin Menjadi
+              <span class="text-warning">Web Developer</span>? Bergabunglah Bersama Kami di <span class="text-warning">Ruang Course</span>.
+            </h2>
             <p class="lead my-4 montserrat">No Registration Fee, Bayar setelah dapat kerja dan dapat di cicil s/d 12 bulan.</p>
-            <button class="btn btn-success btn-lg montserrat-light">Get Started</button>
+            <button class="btn btn-success btn-lg montserrat-light" data-bs-toggle="modal" data-bs-target="#getstarted">Get Started</button>
           </div>
           <img class="img-fluid w-50 ps-4 d-none d-sm-block" src="images/showcase.png" alt="gambar showcase" />
         </div>
@@ -74,7 +83,7 @@
 
     <!-- Boxes -->
 
-    <section class="p-5 bg-light">
+    <section class="p-5 bg-light" id="kelas">
       <div class="container">
         <div class="row text-center g-4">
           <div class="col-md">
@@ -85,7 +94,8 @@
                 </div>
                 <h3 class="card-title lora">Front Web Developer</h3>
                 <p class="card-text montserrat">
-                  Yuk bergabung dengan kelas belajar kami, kamu ajarkan bagaimana cara belajar pemograman yang efektif dan efisien, agar kalian dapat beradaptasi dengan perkembangan industri IT dengan mudah & mandiri.
+                  Yuk bergabung dengan kelas belajar kami, kamu ajarkan bagaimana cara belajar pemograman yang efektif dan efisien, agar kalian dapat
+                  beradaptasi dengan perkembangan industri IT dengan mudah & mandiri.
                 </p>
                 <a href="#" class="btn btn-success montserrat-light text-light">Pelajari Lebih Lanjut</a>
               </div>
@@ -99,7 +109,8 @@
                 </div>
                 <h3 class="card-title lora">Backend Web Developer</h3>
                 <p class="card-text montserrat">
-                  Yuk bergabung dengan kelas belajar kami, kamu ajarkan bagaimana cara belajar pemograman yang efektif dan efisien, agar kalian dapat beradaptasi dengan perkembangan industri IT dengan mudah & mandiri.
+                  Yuk bergabung dengan kelas belajar kami, kamu ajarkan bagaimana cara belajar pemograman yang efektif dan efisien, agar kalian dapat
+                  beradaptasi dengan perkembangan industri IT dengan mudah & mandiri.
                 </p>
                 <a href="#" class="btn btn-primary montserrat-light">Pelajari Lebih Lanjut</a>
               </div>
@@ -113,7 +124,8 @@
                 </div>
                 <h3 class="card-title lora">Data Scientist</h3>
                 <p class="card-text montserrat">
-                  Yuk bergabung dengan kelas belajar kami, kamu ajarkan bagaimana cara belajar pemograman yang efektif dan efisien, agar kalian dapat beradaptasi dengan perkembangan industri IT dengan mudah & mandiri.
+                  Yuk bergabung dengan kelas belajar kami, kamu ajarkan bagaimana cara belajar pemograman yang efektif dan efisien, agar kalian dapat
+                  beradaptasi dengan perkembangan industri IT dengan mudah & mandiri.
                 </p>
                 <a href="#" class="btn btn-info text-light montserrat-light">Pelajari Lebih Lanjut</a>
               </div>
@@ -133,7 +145,10 @@
           <div class="col-md p-5 text-start">
             <h2 class="mb-3 lora">Belajar Dasar Pemrograman</h2>
             <p class="lead montserrat">Belajar dasar pemrograman lebih mudah dan terarah dengan mengikuti course ini dengan kurikulum kami.</p>
-            <p class="lead montserrat">Kamu akan diajarkan mulai dari dasar sampai mahir, loh!, jangan khawatir jika kamu bukan dari latar belakang IT. Karena Program ini terbuka untuk umum.</p>
+            <p class="lead montserrat">
+              Kamu akan diajarkan mulai dari dasar sampai mahir, loh!, jangan khawatir jika kamu bukan dari latar belakang IT. Karena Program ini
+              terbuka untuk umum.
+            </p>
             <a href="" class="btn btn-success mt-3 btn-lg montserrat-light"><i class="bi bi-arrow-right-square"></i> Lets to Begin</a>
           </div>
         </div>
@@ -147,7 +162,10 @@
           <div class="col-md p-5 text-start">
             <h2 class="mb-3 lora">Belajar React dan Bootstrap 4</h2>
             <p class="lead montserrat">Belajar React dan Bootstrap lebih mudah dan terarah dengan mengikuti course ini dengan kurikulum kami</p>
-            <p class="lead montserrat">Kamu akan diajarkan mulai dari dasar sampai mahir, loh!, jangan khawatir jika kamu bukan dari latar belakang IT. Karena Program ini terbuka untuk umum</p>
+            <p class="lead montserrat">
+              Kamu akan diajarkan mulai dari dasar sampai mahir, loh!, jangan khawatir jika kamu bukan dari latar belakang IT. Karena Program ini
+              terbuka untuk umum
+            </p>
             <a href="" class="btn btn-primary mt-3 btn-lg montserrat-light"><i class="bi bi-arrow-right-square"></i> Lets to Begin</a>
           </div>
           <div class="col-md">
@@ -156,6 +174,254 @@
         </div>
       </div>
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Testimonials Accordian -->
+    <section class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4 lora">Q&A Seputar Ruang Course</h2>
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md p-3">
+            <div class="accordion accordion-flush montserrat" id="questions">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                    Apa itu Ruang Course?
+                  </button>
+                </h2>
+                <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Ruang Course adalah platform yang memungkinkan kamu mendapatkan pekerjaan idaman dengan cara di bimbing oleh mentor yang akan
+                    menjadi teman seperjuanganmu dalam belajar dan ber-karir.
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                    Cara Mendaftar?
+                  </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    kamu hanya perlu mendaftar di website dengan fasilitas yang sudah disediakan, bisa menggunakan akun facebook, akun gmail atau akun
+                    email biasa
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    Bagaimana Proses Belajarnya?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Proses belajar bisa offline / online, ketentuan belajar disepakati masing - masing oleh mentor dengan peserta.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md p-3">
+            <div class="accordion accordion-flush montserrat" id="questions">
+              <!-- Item 1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                    Bagaimana sistem bootcamp di Ruang Course?
+                  </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Untuk sementara, bootcamp dilaksanakan secara online dikarenakan kita sedang dalam masa pandemi COVID-19. Untuk bootcamp onsite
+                    akan diinformasikan lebih lanjut.
+                  </div>
+                </div>
+              </div>
+              <!-- item 2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                    Ada berapa kelas di Bootcamp Ruang Course?
+                  </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Saat ini kita sudah membuka 3 kelas Bootcamp DumbWays yaitu: Kelas Bootcamp Frontend Web Developer, Kelas Backend Web Developer
+                    dan Data Scientist.
+                  </div>
+                </div>
+              </div>
+              <!-- item 3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-six">
+                    Ini 100% Langsung disalurkan kerja, Kak?
+                  </button>
+                </h2>
+                <div id="question-six" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                    Pastinya langsung disalurkan kerja setelah pelatihan Bootcamp DumbWays berakhir dan kamu dinyatakan lulus / berhasil oleh Tim
+                    DumbWays
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengajar -->
+    <section class="p-5 bg-primary">
+      <div class="container">
+        <h2 class="text-center text-light lora">Pengajar Professionals Kami di Ruang Course</h2>
+        <p class="lead text-light text-center mb-4 montserrat">
+          Pengajar di Ruang Course ini sudah berpengalaman di bidang IT rata-rata sudah lebih dari 10 tahun.
+        </p>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/60.jpg" alt="" class="rounded-circle mb-3 w-50" />
+                <h3 class="card-title mb-3 lora">Hilmi Lorem</h3>
+                <p class="card-text montserrat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit eaque at quas nihil vel.
+                </p>
+                <a href="https://twitter.com/HilmiRazib"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="facebook.com/hilmirazib.yusuf"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/hilmirazib/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/hilmi-razib-yusuf-2874441b5/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="" class="rounded-circle mb-3 w-50" />
+                <h3 class="card-title mb-3 lora">Hilmi Smith</h3>
+                <p class="card-text montserrat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit eaque at quas nihil vel.
+                </p>
+                <a href="https://twitter.com/HilmiRazib"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="facebook.com/hilmirazib.yusuf"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/hilmirazib/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/hilmi-razib-yusuf-2874441b5/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="images/profile.png" alt="" class="rounded-circle mb-3 w-50" />
+                <h3 class="card-title mb-3 lora">Hilmi Razib Yusuf</h3>
+                <p class="card-text montserrat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit eaque at quas nihil vel.
+                </p>
+                <a href="https://twitter.com/HilmiRazib"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="facebook.com/hilmirazib.yusuf"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/hilmirazib/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/hilmi-razib-yusuf-2874441b5/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card bg-light">
+              <div class="card-body text-center">
+                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="" class="rounded-circle mb-3 w-50" />
+                <h3 class="card-title mb-3 lora">Hilmi Steve</h3>
+                <p class="card-text montserrat">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut reprehenderit eaque at quas nihil vel.
+                </p>
+                <a href="https://twitter.com/HilmiRazib"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                <a href="facebook.com/hilmirazib.yusuf"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                <a href="https://www.instagram.com/hilmirazib/"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                <a href="https://www.linkedin.com/in/hilmi-razib-yusuf-2874441b5/"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section class="p-5">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md">
+            <h2 class="text-center mb-4 lora">Info Kontak</h2>
+            <ul class="list-group list-group-flush lead montserrat">
+              <li class="list-group-item"><span class="fw-bold">Lokasi Utama: </span>Jl. Tasik Garut, Ranggon RT/RW 19/04 Tasikmalaya</li>
+              <li class="list-group-item"><span class="fw-bold">No. HP: </span>+(62) 8978663783</li>
+              <li class="list-group-item"><span class="fw-bold">Email Manager: </span>Hilmiyusuf197@gmail.com</li>
+              <li class="list-group-item"><span class="fw-bold">Email Perusahaan: </span>Ruangcourse@career.com</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <div id="map" style="width: 100%; height: 100%; border-radius: 10px"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="p-5 bg-primary text-light text-center position-relative">
+      <div class="container">
+        <p class="lead montserrat">Copyright &copy; 2021 Ruang Course - Indonesia</p>
+
+        <a href="#" class="position-absolute bottom-0 end-0 p-5">
+          <i class="bi bi-arrow-up-circle h1 text-light"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="getstarted" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Form Pendaftaran</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Isi data berikut ini untuk memulai Bootcamp di Ruang Course:</p>
+            <form>
+              <div class="mb-3">
+                <label for="nama-lengkap" class="col-form-label"> Nama Lengkap: </label>
+                <input type="text" class="form-control" id="nama-lengkap" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="col-form-label"> Email: </label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="mb-3">
+                <label for="wa" class="col-form-label"> No. Whatsapp: </label>
+                <input type="text" class="form-control" id="wa" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="button" class="btn btn-primary">Kirim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js"></script>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiaGlsbWlyYXppYiIsImEiOiJja3NwMnBiaTkwMXJvMndxbTZza2Yxczd5In0.O9plARfb-0JvI8BG7hCtmw';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+      });
+    </script>
   </body>
 </html>
